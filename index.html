@@ -1,41 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">    
     <title>NITKRacing Booking Page</title>
 </head>
+
 <body>
-    <h1>Book here!</h1>
+    
     <form action="./redirect.html">
+        <img src="./Assets/nr.png" class="logo"alt="">
+        <h1>Book here</h1>
+        <div class="flex-container">
         <span>Company Name:</span>
-        <input type="text" name="name" id="name">
-        <br>
+        <input type="text" placeholder="Enter company name"name="name" id="name">
+        
         <span>E-mail:</span>
         <input type="email" name="email" id="email">
-        <br>
+       
         <span>Point of contact</span>
         <input type="text" name="email" id="email">
-        <br>
+      
         <span>Mobile Number</span>
         <input type="text" name="number" id="number">
-        <br>
-       <label for="lang">Components</label>
-        <select name="languages" id="lang" multiple>
-          <option value="javascript">Battery</option>
-          <option value="php">Electronics</option>
-          <option value="java">Nosecone</option>
-          <option value="golang">Shroud</option>
-      
-        </select>
-        <br>
+  
+        <span for="lang">Components</span>
+                  <div class="multiselect">
+                <div class="selectBox" onclick="showCheckboxes()">
+                    <select>
+                        <option>Select an option</option>
+                    </select>
+                    <div class="overSelect"></div>
+                </div>
+                <div id="checkboxes">
+                    <label for="one">
+                        <input type="checkbox" id="one" />Battery</label>
+                    <label for="two">
+                        <input type="checkbox" id="two" />Electronics</label>
+                    <label for="three">
+                        <input type="checkbox" id="three" />Suspensions</label>
+                </div>
+            </div>
 
-        <span>Location</span>
-        <input type="text" name="number" id="number">
-        <br>
-        <input type="submit" value="Submit" />
-    </form>
+        
+            <br>
 
+            <span>Location</span>
+            <input type="text" name="number" id="number">
+            <br>
+            <input class="button" type="submit" value="Submit" />
+        </div>
+        </form>
+        <script src="./script.js"></script>
 </body>
+
 </html>
