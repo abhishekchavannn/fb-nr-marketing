@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Book here!</h1>
-    <form action="book.php">
+    <form action="./redirect.html">
         <span>Company Name:</span>
         <input type="text" name="name" id="name">
         <br>
@@ -16,8 +16,26 @@
         <input type="email" name="email" id="email">
         <br>
         <span>Point of contact</span>
-        <input type="email" name="email" id="email">
+        <input type="text" name="email" id="email">
         <br>
+        <span>Mobile Number</span>
+        <input type="text" name="number" id="number">
+        <br>
+       <label for="lang">Components</label>
+        <select name="languages" id="lang" multiple>
+          <option value="javascript">Battery</option>
+          <option value="php">Electronics</option>
+          <option value="java">Nosecone</option>
+          <option value="golang">Shroud</option>
+      
+        </select>
+        <br>
+
+        <span>Location</span>
+        <input type="text" name="number" id="number">
+        <br>
+        <input type="submit" value="Submit" />
     </form>
+
 </body>
 </html>
