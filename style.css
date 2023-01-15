@@ -22,7 +22,7 @@ margin:0 auto;
     width: 100px;
   }
   .confirm{
-    background-color: #ffffff;
+    background-color: #ffffffe3;
     color: #000000;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
@@ -30,12 +30,15 @@ margin:0 auto;
     position: absolute;
     padding: 50px;
     top: 200px;
-    bottom: 250px;
-    left: 450px;
-    right: 450px;
+    bottom: 450px;
+    left: 550px;
+    right: 550px;
     border: none;
     outline: none;
     transition: 0.2s all;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.599);
+backdrop-filter: blur( 4.5px );
+-webkit-backdrop-filter: blur( 4.5px );
   }
   p{
 
@@ -55,7 +58,7 @@ margin:0 auto;
   span{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 15px;
     color: #dadada;
     /* showing the text to left */
     text-align: left;
@@ -80,7 +83,7 @@ margin:0 auto;
     background-image: url('./Assets/bg.png');
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 50px 500px 50px 500px;
+    margin: 80px 650px 100px 650px;
 
 
   }
@@ -108,14 +111,14 @@ margin:0 auto;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   gap: 5px;
+   gap: 10px;
     
   }
   form{
     /* position: absolute;
     margin: 0 auto; */
     text-align: center;
-    padding: 30px 100px 30px 100px;
+    padding: 50px 100px 50px 100px;
     margin: auto;
     background: rgba( 0, 0, 0, 0.2 );
 box-shadow: 0 8px 32px 0 rgba(241, 33, 51, 0.37);
@@ -150,7 +153,10 @@ border: 1px solid rgba(255, 79, 79, 0.18);
   #checkboxes label {
     display: block;
   }
-  
+  label{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+  }
   #checkboxes label:hover {
     background-color: #1e90ff;
   }
